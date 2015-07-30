@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cAb-KQ-KTV">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ETM-jx-brN">
+            <objects>
+                <viewController id="cAb-KQ-KTV" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="osf-bp-gI4"/>
+                        <viewControllerLayoutGuide type="bottom" id="2J3-bO-Gxu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QbG-sq-f6B">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="SwF-J2-0qf">
+                                <rect key="frame" x="36" y="181" width="248" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="244" id="1W9-MM-rZI"/>
+                                    <constraint firstAttribute="height" constant="30" id="Wx1-QN-bWr"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sliderValueChange:" destination="cAb-KQ-KTV" eventType="valueChanged" id="W1u-Nj-2A6"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.7297785725" blue="0.65693177619999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="SwF-J2-0qf" firstAttribute="top" secondItem="osf-bp-gI4" secondAttribute="bottom" constant="161" id="KKL-Gg-vLi"/>
+                            <constraint firstAttribute="centerX" secondItem="SwF-J2-0qf" secondAttribute="centerX" id="uqd-Fc-eSJ"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="sliderCustom" destination="SwF-J2-0qf" id="cLk-To-vep"/>
+                        <outlet property="view" destination="QbG-sq-f6B" id="mc5-0d-dG9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="364-iy-KGU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="649" y="15"/>
+        </scene>
+    </scenes>
+</document>
